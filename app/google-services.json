@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "29394403111",
+    "firebase_url": "https://barivaraapp.firebaseio.com",
+    "project_id": "barivaraapp",
+    "storage_bucket": "barivaraapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29394403111:android:072abbdb07d493e6",
+        "android_client_info": {
+          "package_name": "com.nafeo.www.barivara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29394403111-ojfkjft1r5rjgpi8lc7lgcco4fd5c9bc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nafeo.www.barivara",
+            "certificate_hash": "29c7626a3f0b6bcffab666a977227ad46719b1f3"
+          }
+        },
+        {
+          "client_id": "29394403111-ru79bvch4fk5l6nud51c75m17bnu053r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgXmuoyH-YYRYQhQjEn8ISfMwvH7lraSk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29394403111-ru79bvch4fk5l6nud51c75m17bnu053r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

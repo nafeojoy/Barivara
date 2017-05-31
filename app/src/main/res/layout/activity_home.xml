@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nafeo.www.barivara.Activities.HomeActivity">
+
+   <!-- <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+
+            &lt;!&ndash;Put form controls here&ndash;&gt;
+            <TextView
+                android:id="@+id/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Profile"
+                android:textSize="10pt">
+            </TextView>
+            <EditText
+                android:id="@+id/EditTextEmail"
+                android:layout_height="wrap_content"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:layout_width="fill_parent">
+            </EditText>
+            <Spinner
+                android:id="@+id/SpinnerFeedbackType"
+                android:layout_height="wrap_content"
+
+                android:layout_width="fill_parent"
+                android:entries="@array/feedbacktypelist">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/EditTextFeedbackBody"
+                android:layout_height="wrap_content"
+                android:hint="Feedback Body"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:layout_width="fill_parent">
+            </EditText>
+
+        </LinearLayout>
+    </ScrollView>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:src="@drawable/cover"
+                android:scaleType="centerCrop"
+                tools:layout_editor_absoluteY="25dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Logout"
+                android:layout_below="@+id/cover"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sezan"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp"
+                tools:layout_editor_absoluteY="25dp"
+                tools:layout_editor_absoluteX="0dp"
+                android:layout_marginTop="123dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/EditProfilePicture"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilePicture"
+                android:gravity="bottom"
+                android:textAlignment="center"
+                android:text="Edit"
+                android:layout_marginTop="220dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/profilePicture"
+                android:layout_alignStart="@+id/profilePicture" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/nameText"
+                style="@android:style/Widget.CompoundButton.Star"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:selectAllOnFocus="true"
+                android:singleLine="false"
+                android:text="Nafeo Alam"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:src="@drawable/user"
+                    android:text="Location: "
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/locationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:src="@drawable/user"
+                    android:text="Dhaka" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:src="@drawable/user"
+                    android:text="Phone No: "
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/phoneText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/user"
+                    android:text="Dhaka" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:src="@drawable/user"
+                    android:text="Facebook ID: "
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/facebookText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:src="@drawable/user"
+                    android:text="Dhaka" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:src="@drawable/user"
+                    android:text="Occupation: "
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/occupationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/user"
+                    android:text="Dhaka" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/updateBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Update" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+</FrameLayout>

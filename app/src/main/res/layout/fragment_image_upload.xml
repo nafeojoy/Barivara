@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    android:paddingTop="60dp"
+    tools:context=".Fragments.ImageUploadFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/com_facebook_button_background_color_pressed"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/com_facebook_auth_dialog_background"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/imageName"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:hint="Image Name"
+            android:textColor="@color/cardview_shadow_end_color"
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/cardview_dark_background" />
+        <Button
+            android:id="@+id/browseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            />
+        <Button
+            android:id="@+id/uploadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>
